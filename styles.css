@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 html {
   width: 100%;
   height: 100%;  
@@ -18,14 +20,35 @@ body {
   background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
   background: linear-gradient(135deg, #5b6e91 0%, #4367a9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#4367a9', GradientType=1);
-  font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
+  font-family: 'Lato', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;
+  /*font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial; (original fonts */
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+/* Top bar styling */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */ */
+  z-index: 1000; /* ensures the bar is above other content */
+  padding: 10px 0; /* adjust as needed */
+  display: flex;
+  justify-content: center; /* centers logo horizontally */
+  align-items: center; /* centers logo vertically */
+}
+
+.logo {
+  height: 70px; /* adjust size of logo as needed */
+}
+
 /* Top Info */
 #title {
+  margin-top: 90px; /* adjust this value based on the height of your top bar */
   position: relative;
   width: 100%;
   top: 3%;
@@ -34,7 +57,7 @@ body {
   text-align: center;
   font-size: 34px;
   opacity: 0.9;
-  font-weight: 300;
+  font-weight: 100;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
