@@ -24,8 +24,29 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+/* Top bar styling */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */ */
+  z-index: 1000; /* ensures the bar is above other content */
+  padding: 10px 0; /* adjust as needed */
+  display: flex;
+  justify-content: center; /* centers logo horizontally */
+  align-items: center; /* centers logo vertically */
+}
+
+.logo {
+  height: 70px; /* adjust size of logo as needed */
+  margin-left: 70px;
+}
+
 /* Top Info */
 #title {
+  margin-top: 90px; /* adjust this value based on the height of your top bar */
   position: relative;
   width: 100%;
   top: 3%;
