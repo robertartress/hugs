@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
+@font-face {
+  font-family: 'larkeregular';
+  src: url('./fonts/larke_sans_light_2-webfont.woff2') format('woff2'),
+       url('./fonts/larke_sans_light_2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'larkebold';
+  src: url('./fonts/larke_sans_bold-webfont.woff2') format('woff2'),
+       url('./fonts/larke_sans_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 html {
   width: 100%;
@@ -20,7 +37,7 @@ body {
   background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
   background: linear-gradient(135deg, #5b6e91 0%, #4367a9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#4367a9', GradientType=1);
-  font-family: 'Lato', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: 'larkebold', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;
   /*font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial; (original fonts */
   -webkit-user-select: none;
   user-select: none;
@@ -55,9 +72,9 @@ body {
   line-height: 34px;
   height: 34px;
   text-align: center;
-  font-size: 34px;
+  font-size: 45px;
   opacity: 0.9;
-  font-weight: 100;
+  font-weight: 300;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
