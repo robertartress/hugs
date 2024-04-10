@@ -275,7 +275,7 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'Let It Ride [Master_v1] 44_16',
+    title: 'Let It Ride [Master_v1]',
     file: 'Let It Ride [Master_v1] 44_16.flac',
     howl: null
   }
