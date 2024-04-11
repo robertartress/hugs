@@ -31,6 +31,10 @@ def main():
     new_artist = input("Enter the  artist name: ")
     new_file_name = input("Enter the file name: ")
 
+    # Check if the last character of the link is "0" and replace it with "1"
+    if new_link.endswith("0"):
+        new_link = new_link[:-1] + "1"
+
     # Remove the file extension for the song title
     new_song_title, _ = os.path.splitext(new_file_name)
 
