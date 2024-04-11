@@ -1,5 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
-@font-face {
+
+
+/* @font-face {
   font-family: 'larkeregular';
   src: url('./fonts/larke_sans_light_2-webfont.woff2') format('woff2'),
        url('./fonts/larke_sans_light_2-webfont.woff') format('woff');
@@ -15,6 +16,12 @@
   font-weight: normal;
   font-style: normal;
 
+}*/
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
@@ -37,8 +44,11 @@ body {
   background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
   background: linear-gradient(135deg, #5b6e91 0%, #4367a9 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#4367a9', GradientType=1);
-  font-family: 'larkebold', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  /*font-family: 'Roboto' 'larkebold', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;*/
   /*font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial; (original fonts */
+  font-weight: 400;
+  font-style: normal;
   -webkit-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -51,7 +61,7 @@ body {
   left: 0;
   width: 100%;
   background-color: white;
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */ */
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for depth */
   z-index: 1000; /* ensures the bar is above other content */
   padding: 10px 0; /* adjust as needed */
   display: flex;
@@ -72,7 +82,7 @@ body {
   line-height: 34px;
   height: 34px;
   text-align: center;
-  font-size: 45px;
+  font-size: 38px;
   opacity: 0.9;
   font-weight: 300;
   color: #fff;
@@ -290,7 +300,7 @@ body {
 .list-song {
   width: 100%;
   height: 120px;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 120px;
   text-align: center;
   font-weight: bold;
