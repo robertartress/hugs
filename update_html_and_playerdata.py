@@ -15,10 +15,9 @@ def main():
     html_filename = 'index.html'
     js_filename = 'playerData.js'
 
-    new_link = input("Enter the new Dropbox link: ")
-    new_title = input("Enter the new title: ")
-    new_artist = input("Enter the new artist name: ")
-    new_file_name = input("Enter the new file name for playerData.js: ")
+    new_link = input("Enter the Dropbox link: ")
+    new_artist = input("Enter the  artist name: ")
+    new_file_name = input("Enter the file name: ")
 
     # Remove the file extension for the song title
     new_song_title, _ = os.path.splitext(new_file_name)
@@ -26,7 +25,6 @@ def main():
     # Update index.html
     html_replacements = {
         r'href="PLACEHOLDER_LINK"': f'href="{new_link}"',
-        r'<title>PLACEHOLDER_TITLE': f'<title>{new_title}',
         'PLACEHOLDER_ARTIST': new_artist
     }
     update_file(html_filename, html_replacements)
