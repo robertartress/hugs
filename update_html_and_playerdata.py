@@ -1,5 +1,17 @@
 import re
 import os
+import re
+import sys
+
+def resource_path(relative_path):
+    """ Get the path to the resource, which is expected to be in the same directory as the executable """
+    if getattr(sys, 'frozen', False):
+        # If the application is frozen (executable), use the directory of the executable
+        return os.path.join(os.path.dirname(sys.executable), relative_path)
+    else:
+        # If running as a script, use the directory of the script
+        return os.path.join(os.path.dirname(__file__), relative_path)
+
 
 def update_file(filename, replacements):
     with open(filename, 'r', encoding='utf-8') as file:
@@ -12,8 +24,8 @@ def update_file(filename, replacements):
         file.write(content)
 
 def main():
-    html_filename = 'index.html'
-    js_filename = 'playerData.js'
+    html_filename = resource_path('index.html')
+    js_filename = resource_path('playerData.js')
 
     new_link = input("Enter the Dropbox link: ")
     new_artist = input("Enter the  artist name: ")
