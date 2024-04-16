@@ -199,12 +199,23 @@ body {
 }
 
 /* Progress */
+#albumArt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 40%; /* Adjust the size based on your design needs */
+  max-height: 40vh; /* Limits the size to not exceed 30% of the viewport height */
+  z-index: 20; /* Adjust as necessary to ensure it is above the background but below any overlays */
+}
+
+/* Progress */
 #waveform {
   width: 100%;
   height: 30%;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 75%;
   margin: -15% auto;
   display: none;
   cursor: pointer;
@@ -217,7 +228,7 @@ body {
 }
 #bar {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 0;
   width: 100%;
   height: 2px;
