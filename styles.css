@@ -34,9 +34,15 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding-top: 80px; 
   width: 100%;
   height: 100%;
   padding: 0;
+  padding-top: 80px; 
   margin: 0;
   overflow: hidden;
   background: #5b6e91;
@@ -73,11 +79,25 @@ body {
   height: 70px; /* adjust size of logo as needed */
 }
 
+.main-content {
+  flex: 1; /* Takes up all available space */
+  width: 100%; /* Full width */
+  overflow-y: auto; /* Scrollable if content is larger than the space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontal center alignment */
+  justify-content: center; /* Vertical center alignment, change this if it's pushing content too low */
+  ;
+}
+
 /* Top Info */
 .album-container {
   text-align: center; /* Center everything in this container */
-  margin-top: calc(70px + 100px); /* Adjust space from the top */
-  margin-bottom: calc(70px + 20px);
+  width: 100%; /* Ensures it fills the container */
+  margin-top: -18%
+  ; /* Adds space above, adjust as needed */
+  /* margin-top: calc(70px + 100px); /* Adjust space from the top */
+  /* margin-bottom: calc(70px + 20px); */
 }
 
 /* Album Art */
@@ -87,9 +107,9 @@ body {
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
   /* margin-top: 10%; */
-  max-width: 60%; /* Adjust the size based on your design needs */
-  max-height: 35vh; /* Limits the size to not exceed 30% of the viewport height */
-  z-index: 20; /* Adjust as necessary to ensure it is above the background but below any overlays */
+  max-width: 75%; /* Adjust the size based on your design needs */
+  max-height: 40vh; /* Limits the size to not exceed 30% of the viewport height */
+  z-index: -20; /* Adjust as necessary to ensure it is above the background but below any overlays */
   border-radius: 8px; /* This gives the image rounded corners */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
 }
@@ -222,10 +242,10 @@ body {
 /* Progress */
 #waveform {
   width: 100%;
-  height: 30%;
+  height: 20%;
   position: absolute;
   left: 0;
-  top: 75%;
+  top: 82%;
   margin: -15% auto;
   display: none;
   cursor: pointer;
@@ -238,10 +258,10 @@ body {
 }
 #bar {
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
   opacity: 0.9;
