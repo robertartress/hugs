@@ -34,22 +34,16 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Full viewport height */
-  margin: 0;
-  padding-top: 80px; 
   width: 100%;
   height: 100%;
   padding: 0;
-  padding-top: 80px; 
   margin: 0;
   overflow: hidden;
   background: #5b6e91;
-  background: -moz-linear-gradient(-45deg, #5b6e91 0%, #3d4a62 100%);
-  background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #3d4a62 100%);
-  background: linear-gradient(135deg, #5b6e91 0%, #3d4a62 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#3d4a62', GradientType=1);
+  background: -moz-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
+  background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
+  background: linear-gradient(135deg, #5b6e91 0%, #4367a9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#4367a9', GradientType=1);
   font-family: "Roboto", sans-serif;
   /*font-family: 'Roboto' 'larkebold', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;*/
   /*font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial; (original fonts */
@@ -79,61 +73,16 @@ body {
   height: 70px; /* adjust size of logo as needed */
 }
 
-.main-content {
-  flex: 1; /* Takes up all available space */
-  width: 100%; /* Full width */
-  overflow-y: auto; /* Scrollable if content is larger than the space */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Horizontal center alignment */
-  justify-content: center; /* Vertical center alignment, change this if it's pushing content too low */
-  ;
-}
-
 /* Top Info */
-.album-container {
-  text-align: center; /* Center everything in this container */
-  width: 100%; /* Ensures it fills the container */
-  margin-top: -360px; /* Adds space above, adjust as needed */
-  /* margin-top: calc(70px + 100px); /* Adjust space from the top */
-  /* margin-bottom: calc(70px + 20px); */
-}
-@media (max-width: 768px) {
-  .album-container {
-    margin-top: -300px; /* Adjusted margin for screens smaller than 768px */
-  }
-}
-
-@media (max-width: 480px) {
-  .album-container {
-    margin-top: -300px; /* Adjusted margin for screens smaller than 480px */
-  }
-}
-
-
-/* Album Art */
-#albumArt {
-  position: relative;
-  /* top: 45%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* margin-top: 10%; */
-  max-width: 75%; /* Adjust the size based on your design needs */
-  max-height: 40vh; /* Limits the size to not exceed 30% of the viewport height */
-  z-index: -20; /* Adjust as necessary to ensure it is above the background but below any overlays */
-  border-radius: 8px; /* This gives the image rounded corners */
-  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
-}
-
 #title {
-  margin-top: 20px; /* adjust this value based on the height of your top bar */
+  margin-top: 90px; /* adjust this value based on the height of your top bar */
   position: relative;
   width: 100%;
   top: 3%;
   line-height: 34px;
   height: 34px;
   text-align: center;
-  font-size: 32px;
+  font-size: 38px;
   opacity: 0.9;
   font-weight: 300;
   color: #fff;
@@ -141,12 +90,11 @@ body {
 }
 
 #downloadBtn {
-  display: inline-block; /* To align properly with the title */
   margin-left: 25px; /* Space between title and button */
   width: 20px;
   height: 20px;
   color: white; /* Adjust color if needed */
-  font-size: 24px; /* Adjust font size if needed */
+  font-size: 28px; /* Adjust font size if needed */
   text-align: center;
   line-height: 28px; /* Center text/icon vertically */
   /* Add additional styling as needed */
@@ -154,73 +102,40 @@ body {
 
 #timer {
   position: absolute;
-  top: 140px;
+  top: 0;
   left: 3%;
   text-align: left;
-  font-size: 20px;
+  font-size: 26px;
   opacity: 0.9;
   font-weight: 300;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
-@media (max-width: 768px) {
-  
-  #timer {
-    top: 80px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  #timer {
-    top: 80px;
-    font-size: 18px; 
-  }
-}
 #duration {
   position: absolute;
-  top: 140px;
+  top: 0;
   right: 3%;
   text-align: right;
-  font-size: 20px;
+  font-size: 26px;
   opacity: 0.5;
   font-weight: 300;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
-@media (max-width: 768px) {
-  
-  #duration {
-    top: 80px;
-    font-size: 18px; 
-  }
-}
 
-@media (max-width: 480px) {
-  #duration {
-    top: 80px; 
-    font-size: 18px;
-  }
-}
 /* Controls */
 .controlsOuter {
   position: absolute;
   width: 100%;
   height: 70px;
   bottom: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .controlsInner {
   position: absolute;
   width: 340px;
   height: 70px;
+  left: 50%;
   margin: 0 -170px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .btn {
   position: absolute;
@@ -230,29 +145,6 @@ body {
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.33));
   -webkit-user-select: none;
   user-select: none;
-}
-@media (max-width: 768px) {
-  .btn {
-    width: 10px; /* Smaller button size */
-    height: 10px; /* Smaller button size */
-    margin: 0 5px; /* Reduce margin */
-  }
-}
-
-@media (max-width: 480px) {
-  .controlsInner {
-    max-width: 250px; /* Further reduce the max width */
-  }
-
-  .btn {
-    width: 10px; /* Even smaller button size */
-    height: 10px; /* Even smaller button size */
-  }
-
-  #playBtn, #pauseBtn {
-    width: 35px; /* Slightly larger play/pause button */
-    height: 35px;
-  }
 }
 .btn:hover {
   opacity: 1;
@@ -307,12 +199,25 @@ body {
 }
 
 /* Progress */
+#albumArt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%; /* Adjust the size based on your design needs */
+  max-height: 35vh; /* Limits the size to not exceed 30% of the viewport height */
+  z-index: 20; /* Adjust as necessary to ensure it is above the background but below any overlays */
+  border-radius: 1%; /* This gives the image rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+}
+
+/* Progress */
 #waveform {
   width: 100%;
-  height: 20%;
+  height: 30%;
   position: absolute;
   left: 0;
-  top: 86%;
+  top: 75%;
   margin: -15% auto;
   display: none;
   cursor: pointer;
@@ -320,28 +225,15 @@ body {
   -webkit-user-select: none;
   user-select: none;
 }
-@media (max-width: 768px) {
-  #waveform {
-    top: 90%;
-    
-  }
-}
-
-@media (max-width: 480px) {
-  #waveform {
-    top: 90%;
-    
-  }
-}
 #waveform:hover {
   opacity: 1;
 }
 #bar {
   position: absolute;
-  top: 81%;
+  top: 75%;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
   opacity: 0.9;
@@ -395,7 +287,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
 #list {
