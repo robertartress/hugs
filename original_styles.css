@@ -74,35 +74,15 @@ body {
 }
 
 /* Top Info */
-.album-container {
-  text-align: center; /* Center everything in this container */
-  margin-top: calc(70px + 100px); /* Adjust space from the top */
-  margin-bottom: calc(70px + 20px);
-}
-
-/* Album Art */
-#albumArt {
-  position: relative;
-  /* top: 45%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* margin-top: 10%; */
-  max-width: 60%; /* Adjust the size based on your design needs */
-  max-height: 35vh; /* Limits the size to not exceed 30% of the viewport height */
-  z-index: 20; /* Adjust as necessary to ensure it is above the background but below any overlays */
-  border-radius: 8px; /* This gives the image rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
-}
-
 #title {
-  margin-top: 20px; /* adjust this value based on the height of your top bar */
+  margin-top: 90px; /* adjust this value based on the height of your top bar */
   position: relative;
   width: 100%;
   top: 3%;
   line-height: 34px;
   height: 34px;
   text-align: center;
-  font-size: 24px;
+  font-size: 38px;
   opacity: 0.9;
   font-weight: 300;
   color: #fff;
@@ -110,12 +90,11 @@ body {
 }
 
 #downloadBtn {
-  display: inline-block; /* To align properly with the title */
   margin-left: 25px; /* Space between title and button */
   width: 20px;
   height: 20px;
   color: white; /* Adjust color if needed */
-  font-size: 24px; /* Adjust font size if needed */
+  font-size: 28px; /* Adjust font size if needed */
   text-align: center;
   line-height: 28px; /* Center text/icon vertically */
   /* Add additional styling as needed */
@@ -217,6 +196,19 @@ body {
   top: 50%;
   right: 3%;
   margin: -17.5px auto;
+}
+
+/* Progress */
+#albumArt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%; /* Adjust the size based on your design needs */
+  max-height: 35vh; /* Limits the size to not exceed 30% of the viewport height */
+  z-index: 20; /* Adjust as necessary to ensure it is above the background but below any overlays */
+  border-radius: 1%; /* This gives the image rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
 }
 
 /* Progress */
