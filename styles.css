@@ -46,10 +46,10 @@ body {
   margin: 0;
   overflow: hidden;
   background: #5b6e91;
-  background: -moz-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
-  background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #4367a9 100%);
-  background: linear-gradient(135deg, #5b6e91 0%, #4367a9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#4367a9', GradientType=1);
+  background: -moz-linear-gradient(-45deg, #5b6e91 0%, #3d4a62 100%);
+  background: -webkit-linear-gradient(-45deg, #5b6e91 0%, #3d4a62 100%);
+  background: linear-gradient(135deg, #5b6e91 0%, #3d4a62 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b6e91', endColorstr='#3d4a62', GradientType=1);
   font-family: "Roboto", sans-serif;
   /*font-family: 'Roboto' 'larkebold', "Helvetica Neue", "Futura", "Trebuchet MS", Arial, sans-serif;*/
   /*font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial; (original fonts */
@@ -395,7 +395,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   display: none;
 }
 #list {
